@@ -1,4 +1,4 @@
-package pl.uknowedu.advancedapp
+package pl.uknowedu.advancedapp.recycler
 
 import android.net.Uri
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import pl.uknowedu.advancedapp.R
 
 class RecyclerActivity : AppCompatActivity() {
     val movies = listOf(

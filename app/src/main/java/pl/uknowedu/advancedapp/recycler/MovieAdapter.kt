@@ -1,6 +1,5 @@
-package pl.uknowedu.advancedapp
+package pl.uknowedu.advancedapp.recycler
 
-import android.net.Uri
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import coil.load
 import com.google.android.material.snackbar.Snackbar
+import pl.uknowedu.advancedapp.R
 
 class MovieAdapter(val movies: List<Movie>): Adapter<MovieAdapter.MovieViewHolder>() {
     class MovieViewHolder(val row: View): RecyclerView.ViewHolder(row){

@@ -1,11 +1,6 @@
 package pl.uknowedu.advancedapp
 
 import android.content.Intent
-import android.hardware.Sensor
-import android.hardware.SensorEvent
-import android.hardware.SensorEventListener
-import android.hardware.SensorManager
-import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -13,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import pl.uknowedu.advancedapp.base.DaoActivity
+import pl.uknowedu.advancedapp.recycler.RecyclerActivity
+import pl.uknowedu.advancedapp.sensor.SensorActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var recyclerBtn: Button
@@ -44,6 +41,11 @@ class MainActivity : AppCompatActivity() {
 
         daoBtn.setOnClickListener {
             val intent = Intent(this, DaoActivity::class.java)
+            startActivity(intent)
+        }
+
+        sensorBtn.setOnClickListener {
+            val intent = Intent(this, SensorActivity::class.java)
             startActivity(intent)
         }
 

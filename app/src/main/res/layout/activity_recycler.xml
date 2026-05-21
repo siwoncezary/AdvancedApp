@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="10dp"
-    tools:context=".RecyclerActivity">
+    tools:context=".recycler.RecyclerActivity">
 
     <TextView
         android:layout_gravity="center"

@@ -14,10 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdvancedApp">
         <activity
+            android:name=".sensor.SensorActivity"
+            android:exported="false" />
+        <activity
             android:name=".base.DaoActivity"
             android:exported="false" />
         <activity
-            android:name=".RecyclerActivity"
+            android:name=".recycler.RecyclerActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
