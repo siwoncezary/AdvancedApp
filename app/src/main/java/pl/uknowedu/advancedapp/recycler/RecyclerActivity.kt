@@ -10,6 +10,22 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import pl.uknowedu.advancedapp.R
 
+// Zadanie 10
+// Zmodyfikuj RecyclerActivity, aby wyświetlał użytkowników z bazy.
+//
+// Skopiuj układ recycler_item.xml do pliku user_item.xml,
+// i zmodyfikuj go, aby zmiast RatingBar zawierał TextView
+// Oba TextView będa służyć do wyświetlania name i email użytkownika.
+// Pozostaw ImageView w tym samym miejscu, aby wyświetlać tam jedną z dwóch ikon
+// (samodzielnie poszukaj ikon) dla mężczyzny lub kobiety.
+
+// Zdanie 11
+// Utwórz nowy adapter UsersAdapter (na wzór obecnego MovieAdapter'a), aby wyświetlał dane wszystkich użytkowników z bazy
+// W ImageView wyświetl losowo jedną z dwóch ikon, a name i email w TextView
+
+// Zdanie 12
+// Zmień kod w RecyclerActivity, aby obecny RecyclerView wyświetał dane z bazy
+
 class RecyclerActivity : AppCompatActivity() {
     val movies = listOf(
         Movie(Uri.parse("https://fwcdn.pl/cwpo/00/03/3/3_1.3.jpg"), "Nowa Nadzieja", 10),

@@ -22,7 +22,7 @@ class DaoActivity : AppCompatActivity() {
     lateinit var database: AppDatabase
     lateinit var dao: UserDao
     // Zadanie 1
-    // zdefiniuj poniżej zmienne dla pól formualrza
+    // zdefiniuj poniżej zmienne dla pól formularza
     // nameEdit, emailEdit, passwordEdit i confirmPasswordEdit
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,7 +51,6 @@ class DaoActivity : AppCompatActivity() {
         }
     }
 
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean
     {
         val inflater: MenuInflater = getMenuInflater()
@@ -64,17 +63,20 @@ class DaoActivity : AppCompatActivity() {
             R.id.daoMenuSave -> {
                 // Zadanie 3
                 // odczytaj dane z formularza
-                // utówrz na podstawie tych danych obiekt klasy User
+                // utwórz na podstawie tych danych obiekt klasy User
                 // zapisz obiekt do bazy odpowiednią metodą dao
                 // pamiętaj o umieszczeniu kodu zapisu w lifeCycle.launch(Dispatchers.IO)
+
                 // Zadanie 4
                 // dodaj w interfejsie UserDao metodę countAll, która zwraca liczbę osób w bazie
+
                 // Zdanie 5
-                // Wywołaj metodę z zadania 4, aby zaktualizować liczbę rekordów w AppBar
+                // Wywołaj metodę z zadania 4, aby zaktualizować liczbę rekordów w AppBar po zapisie
             }
             R.id.daoMenuReturn -> {
                 // Zadanie 6
                 // wywołaj metodę finish, aby wyjść z aktywności, gdy użytkownik wybierze tak
+                // w oknie dialogowym
                 AlertDialog.Builder(this)
                     .setMessage("Czy na pewno chcesz wyjść z aplikacji?")
                     .setPositiveButton("Tak", { d, i ->
