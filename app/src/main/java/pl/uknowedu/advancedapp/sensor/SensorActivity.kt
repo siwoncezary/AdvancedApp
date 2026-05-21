@@ -31,7 +31,6 @@ class SensorActivity : AppCompatActivity() {
             override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
             }
             override fun onSensorChanged(event: SensorEvent?) {
-                Log.i("SENSOR", "Temperatura = ${event?.values[0]}")
                 tempView.text = "${event?.values[0]} C"
             }
         },sensor, 1000)

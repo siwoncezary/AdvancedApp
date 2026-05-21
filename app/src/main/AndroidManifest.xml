@@ -18,6 +18,7 @@
             android:exported="false" />
         <activity
             android:name=".base.DaoActivity"
+            android:theme="@style/Theme.Material3.DayNight"
             android:exported="false" />
         <activity
             android:name=".recycler.RecyclerActivity"
