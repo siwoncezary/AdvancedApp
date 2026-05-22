@@ -24,7 +24,7 @@ import pl.uknowedu.advancedapp.R
 // W ImageView wyświetl losowo jedną z dwóch ikon, a name i email w TextView
 
 // Zdanie 12
-// Zmień kod w RecyclerActivity, aby obecny RecyclerView wyświetał dane z bazy
+// Zmień kod w RecyclerActivity, aby obecny RecyclerView wyświetlał dane z bazy
 
 class RecyclerActivity : AppCompatActivity() {
     val movies = listOf(

@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import pl.uknowedu.advancedapp.api.ApiActivity
 import pl.uknowedu.advancedapp.base.DaoActivity
 import pl.uknowedu.advancedapp.recycler.RecyclerActivity
 import pl.uknowedu.advancedapp.sensor.SensorActivity
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var sensorBtn: Button
 
     lateinit var daoBtn: Button
-
+    lateinit var apiBtn: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -31,8 +32,12 @@ class MainActivity : AppCompatActivity() {
 
     fun init(){
         recyclerBtn = findViewById(R.id.recycleBtn)
+
         sensorBtn = findViewById(R.id.sensorBtn)
+
         daoBtn = findViewById(R.id.daoBtn)
+
+        apiBtn = findViewById(R.id.apiBtn)
 
         recyclerBtn.setOnClickListener { g->
             val intent = Intent(this, RecyclerActivity::class.java)
@@ -48,6 +53,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SensorActivity::class.java)
             startActivity(intent)
         }
+
+        apiBtn.setOnClickListener {
+            val intent = Intent(this, ApiActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 
